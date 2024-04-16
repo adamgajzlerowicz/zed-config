@@ -1,0 +1,23 @@
+[
+  {
+    "bindings": {
+      "shift-tab": "workspace::ToggleLeftDock",
+      "cmd-shift-c": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && (vim_operator == none || vim_operator == n) && !VimWaiting",
+    "bindings": {
+      "g d": "editor::GoToDefinition",
+      "g u": "editor::FindAllReferences",
+      "[ d": "editor::GoToPrevDiagnostic",
+      "] d": "editor::GoToDiagnostic"
+    }
+  }
+]
