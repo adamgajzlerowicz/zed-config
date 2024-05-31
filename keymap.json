@@ -2,13 +2,28 @@
   {
     "bindings": {
       "shift-tab": "workspace::ToggleLeftDock",
-      "cmd-shift-c": "terminal_panel::ToggleFocus"
+      "cmd-shift-c": "workspace::ToggleBottomDock",
+      "cmd-r": "project_panel::ToggleFocus"
     }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j j": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-e": "editor::Rename",
+      "cmd-w": "editor::SelectLargerSyntaxNode",
+      "cmd-shift-w": "editor::SelectSmallerSyntaxNode"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+       "cmd-e": "project_panel::Rename"
     }
   },
   {
