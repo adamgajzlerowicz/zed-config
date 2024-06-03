@@ -19,5 +19,18 @@
     "code_actions": {
       "source.fixAll.eslint": true
     }
+  },
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "preview_tabs": {
+    "enabled": false
   }
 }

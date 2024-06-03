@@ -3,7 +3,8 @@
     "bindings": {
       "shift-tab": "workspace::ToggleLeftDock",
       "cmd-shift-c": "workspace::ToggleBottomDock",
-      "cmd-r": "project_panel::ToggleFocus"
+      "cmd-r": "project_panel::ToggleFocus",
+      "alt-p": ["task::Spawn", { "task_name": "Example task" }]
     }
   },
   {
