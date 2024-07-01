@@ -32,5 +32,19 @@
   },
   "preview_tabs": {
     "enabled": false
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/*yarn*"
+  ],
+  "vim": {
+    "use_system_clipboard": "never"
   }
 }

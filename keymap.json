@@ -35,5 +35,11 @@
       "[ d": "editor::GoToPrevDiagnostic",
       "] d": "editor::GoToDiagnostic"
     }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal"
+    }
   }
 ]
