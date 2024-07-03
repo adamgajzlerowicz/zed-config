@@ -18,7 +18,8 @@
     "bindings": {
       "cmd-e": "editor::Rename",
       "cmd-w": "editor::SelectLargerSyntaxNode",
-      "cmd-shift-w": "editor::SelectSmallerSyntaxNode"
+      "cmd-shift-w": "editor::SelectSmallerSyntaxNode",
+      "cmd-enter": "editor::ToggleCodeActions"
     }
   },
   {
@@ -39,7 +40,8 @@
   {
     "context": "Terminal",
     "bindings": {
-      "cmd-t": "workspace::NewTerminal"
+      "cmd-t": "workspace::NewTerminal",
+      "cmd-l": "terminal::Clear"
     }
   }
 ]
