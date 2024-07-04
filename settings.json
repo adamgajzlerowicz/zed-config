@@ -1,5 +1,5 @@
 {
-  "theme": "Gruvbox Dark Hard",
+  "theme": "Github Dark",
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
@@ -19,7 +19,7 @@
         }
       }
     },
-    "Typescript": {
+    "TypeScript": {
       "format_on_save": {
         "external": {
           "command": "prettier",

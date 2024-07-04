@@ -4,7 +4,9 @@
       "shift-tab": "workspace::ToggleLeftDock",
       "cmd-shift-c": "workspace::ToggleBottomDock",
       "cmd-r": "project_panel::ToggleFocus",
-      "alt-p": ["task::Spawn", { "task_name": "Example task" }]
+      "alt-p": ["task::Spawn", { "task_name": "Example task" }],
+      "cmd-j cmd-j": "workspace::ToggleCenteredLayout",
+      "cmd-o": "projects::OpenRecent"
     }
   },
   {
@@ -25,7 +27,7 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-       "cmd-e": "project_panel::Rename"
+      "cmd-e": "project_panel::Rename"
     }
   },
   {
