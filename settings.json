@@ -72,5 +72,8 @@
   "inline_completions": {
     "disabled_globs": [".env"]
   },
-  "show_nav_history_buttons": false
+  "show_nav_history_buttons": false,
+  "outline_panel": {
+    "dock": "right"
+  }
 }
