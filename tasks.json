@@ -1,9 +1,6 @@
-// Static tasks configuration.
-//
-// Example:
 [
   {
-    "label": "Example task",
+    "label": "git commit-push",
     "command": "git add --all && git commit -m .. && git push",
     //"args": [],
     // Env overrides for the command, will be appended to the terminal's environment from the settings.
