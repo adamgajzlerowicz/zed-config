@@ -1,6 +1,7 @@
 [
   {
     "bindings": {
+      "cmd-b": "editor::ToggleGitBlame",
       "shift-tab": "workspace::ToggleLeftDock",
       "cmd-shift-c": "workspace::ToggleRightDock",
       "cmd-r": "project_panel::ToggleFocus",

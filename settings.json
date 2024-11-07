@@ -6,7 +6,7 @@
     },
     "version": "2"
   },
-  "theme": "Fleet Dark",
+  "theme": "JetBrains New Dark",
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
@@ -88,6 +88,9 @@
   },
   "show_inline_completions": false,
   "terminal": {
+    "toolbar": {
+      "title": false
+    },
     "dock": "right"
   }
 }
