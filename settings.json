@@ -1,5 +1,12 @@
 {
-  "theme": "Github Dark",
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "theme": "Fleet Dark",
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
@@ -75,5 +82,9 @@
   "show_nav_history_buttons": false,
   "outline_panel": {
     "dock": "right"
-  }
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "show_inline_completions": false
 }

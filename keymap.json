@@ -6,7 +6,11 @@
       "cmd-r": "project_panel::ToggleFocus",
       "alt-p": ["task::Spawn", { "task_name": "git commit-push" }],
       "cmd-j cmd-j": "workspace::ToggleCenteredLayout",
-      "cmd-o": "projects::OpenRecent"
+      "cmd-o": "projects::OpenRecent",
+      "cmd-j l": "workspace::ToggleLeftDock",
+      "cmd-j r": "workspace::ToggleRightDock",
+      "cmd-j b": "workspace::ToggleBottomDock",
+      "cmd-shift-f": ""
     }
   },
   {
@@ -19,15 +23,17 @@
     "context": "Editor",
     "bindings": {
       "cmd-e": "editor::Rename",
+      "g e": "editor::Rename",
       "cmd-w": "editor::SelectLargerSyntaxNode",
       "cmd-shift-w": "editor::SelectSmallerSyntaxNode",
-      "cmd-enter": "editor::ToggleCodeActions"
+      "g enter": "editor::ToggleCodeActions",
+      "ctrl+s": "workspace::SaveAll"
     }
   },
   {
     "context": "ProjectPanel",
     "bindings": {
-      "cmd-e": "project_panel::Rename"
+      "g e": "project_panel::Rename"
     }
   },
   {
@@ -36,7 +42,8 @@
       "g d": "editor::GoToDefinition",
       "g u": "editor::FindAllReferences",
       "[ d": "editor::GoToPrevDiagnostic",
-      "] d": "editor::GoToDiagnostic"
+      "] d": "editor::GoToDiagnostic",
+      "g r": "workspace::ToggleRightDock"
     }
   },
   {
@@ -44,6 +51,12 @@
     "bindings": {
       "cmd-t": "workspace::NewTerminal",
       "cmd-l": "terminal::Clear"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem"
     }
   }
 ]
