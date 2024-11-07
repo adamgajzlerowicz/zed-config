@@ -2,7 +2,7 @@
   {
     "bindings": {
       "shift-tab": "workspace::ToggleLeftDock",
-      "cmd-shift-c": "workspace::ToggleBottomDock",
+      "cmd-shift-c": "workspace::ToggleRightDock",
       "cmd-r": "project_panel::ToggleFocus",
       "alt-p": ["task::Spawn", { "task_name": "git commit-push" }],
       "cmd-j cmd-j": "workspace::ToggleCenteredLayout",
@@ -10,7 +10,6 @@
       "cmd-j l": "workspace::ToggleLeftDock",
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
-      "cmd-shift-f": ""
     }
   },
   {
@@ -23,7 +22,6 @@
     "context": "Editor",
     "bindings": {
       "cmd-e": "editor::Rename",
-      "g e": "editor::Rename",
       "cmd-w": "editor::SelectLargerSyntaxNode",
       "cmd-shift-w": "editor::SelectSmallerSyntaxNode",
       "g enter": "editor::ToggleCodeActions",

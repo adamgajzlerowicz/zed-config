@@ -86,5 +86,8 @@
   "indent_guides": {
     "enabled": false
   },
-  "show_inline_completions": false
+  "show_inline_completions": false,
+  "terminal": {
+    "dock": "right"
+  }
 }
