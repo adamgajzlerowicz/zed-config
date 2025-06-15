@@ -1,0 +1,135 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "theme": "Solarized Light",
+  "ui_font_size": 14,
+  "buffer_font_features": {
+    "calt": true
+  },
+  "buffer_font_size": 14,
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "features": {
+    "copilot": false
+  },
+  "languages": {
+    "JavaScript": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "Astro": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSON": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "current_line_highlight": "gutter",
+  "centered_layout": {
+    "left_padding": 0.1,
+    "right_padding": 0.1
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "preview_tabs": {
+    "enabled": false
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/*yarn*"
+  ],
+  "vim": {
+    "use_system_clipboard": "never"
+  },
+  "inline_completions": {
+    "disabled_globs": [".env"]
+  },
+  "show_nav_history_buttons": false,
+  "outline_panel": {
+    "dock": "right"
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "show_inline_completions": false,
+  "terminal": {
+    "toolbar": {
+      "title": false
+    },
+    "dock": "right"
+  },
+  "lsp": {
+      "typescript-language-server": {
+        "settings": {
+          "preferences": {
+            "importModuleSpecifierPreference": "relative"
+          }
+        },
+        "initialization_options": {
+          "preferences": {
+            "importModuleSpecifierPreference": "relative"
+          }
+        }
+      }
+    },
+  "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "relative"
+          }
+        }
+      }
+    }
+}

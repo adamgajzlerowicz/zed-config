@@ -1,15 +1,13 @@
 {
-  "agent": {
-    "default_profile": "write",
-    "play_sound_when_agent_done": true,
+  "assistant": {
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4"
+      "model": "claude-sonnet-4-latest"
     },
     "version": "2"
   },
-  "theme": "Quiet Light",
+  "theme": "JetBrains New Dark",
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
@@ -23,16 +21,28 @@
   },
   "languages": {
     "JavaScript": {
-      "formatter": [ "prettier" ],
-      "format_on_save": "on"
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
     },
     "TypeScript": {
-      "formatter": [ "prettier" ],
-      "format_on_save": "on"
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
     },
     "Astro": {
-      "formatter": [ "prettier" ],
-      "format_on_save": "on"
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
     },
     "JSON": {
       "format_on_save": {
@@ -44,10 +54,9 @@
     }
   },
   "formatter": {
-    "external": {
-        "command": "prettier",
-        "arguments": ["--stdin-filepath", "{buffer_path}"]
-      }
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
   },
   "current_line_highlight": "gutter",
   "centered_layout": {
@@ -77,7 +86,7 @@
   "vim": {
     "use_system_clipboard": "never"
   },
-  "edit_predictions": {
+  "inline_completions": {
     "disabled_globs": [".env"]
   },
   "show_nav_history_buttons": false,
@@ -87,28 +96,14 @@
   "indent_guides": {
     "enabled": false
   },
+  // "show_inline_completions": false,
   "terminal": {
     "toolbar": {
       "title": false
     },
-    "dock": "bottom"
+    "dock": "right"
   },
   "minimap": {
-    "show": "never"
-  },
-  "formatters": {
-    "javascript": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       },
-       "typescript": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       },
-       "json": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       }
-   },
-   "format_on_save": "on"
+    "show": "always"
+  }
 }

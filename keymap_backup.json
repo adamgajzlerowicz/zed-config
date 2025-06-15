@@ -3,13 +3,14 @@
     "bindings": {
       "cmd-b": "git::Blame",
       "shift-tab": "workspace::ToggleLeftDock",
-      "cmd-shift-c": "workspace::ToggleBottomDock",
+      "cmd-shift-c": "workspace::ToggleRightDock",
       "cmd-r": "project_panel::ToggleFocus",
       "alt-p": ["task::Spawn", { "task_name": "git commit-push" }],
-      "cmd-j cmd-j": "project_panel::ToggleFocus",
-      "cmd-t": "terminal_panel::ToggleFocus",
-      "cmd-o": "outline::Toggle",
-      "cmd-g": "workspace::ToggleRightDock",
+      "cmd-j cmd-j": "workspace::ToggleCenteredLayout",
+      "cmd-o": "projects::OpenRecent",
+      // "cmd-g t": "terminal_panel::ToggleFocus",
+      // "cmd-g o": "outline_panel::ToggleFocus",
+      "cmd-g": "agent::ToggleFocus",
       "cmd-j l": "workspace::ToggleLeftDock",
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
@@ -46,7 +47,7 @@
     "bindings": {
       "g d": "editor::GoToDefinition",
       "g u": "editor::FindAllReferences",
-      "[ d": "editor::GoToPreviousDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic",
       "] d": "editor::GoToDiagnostic",
       "g r": "workspace::ToggleRightDock"
     }
@@ -54,7 +55,7 @@
   {
     "context": "Terminal",
     "bindings": {
-      "cmd-n": "workspace::NewTerminal",
+      "cmd-t": "workspace::NewTerminal",
       "cmd-l": "terminal::Clear"
     }
   },
