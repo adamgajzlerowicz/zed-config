@@ -1,20 +1,21 @@
 {
   "agent": {
+    "notify_when_agent_waiting": "never",
     "default_profile": "write",
     "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4"
+      "model": "claude-3-7-sonnet"
     },
     "version": "2"
   },
-  "theme": "Quiet Light",
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
   },
-  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "JetBrains Mono",
   "vim_mode": true,
   "autosave": "on_focus_change",
   "features": {
@@ -23,31 +24,41 @@
   },
   "languages": {
     "JavaScript": {
-      "formatter": [ "prettier" ],
+      "formatter": [
+        "prettier"
+      ],
       "format_on_save": "on"
     },
     "TypeScript": {
-      "formatter": [ "prettier" ],
+      "formatter": [
+        "prettier"
+      ],
+      "format_on_save": "on"
+    },
+    "TSX": {
+      "formatter": [
+        "prettier"
+      ],
+      "format_on_save": "on"
+    },
+    "JSX": {
+      "formatter": [
+        "prettier"
+      ],
       "format_on_save": "on"
     },
     "Astro": {
-      "formatter": [ "prettier" ],
+      "formatter": [
+        "prettier"
+      ],
       "format_on_save": "on"
     },
     "JSON": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
+      "formatter": [
+        "prettier"
+      ],
+      "format_on_save": "on"
     }
-  },
-  "formatter": {
-    "external": {
-        "command": "prettier",
-        "arguments": ["--stdin-filepath", "{buffer_path}"]
-      }
   },
   "current_line_highlight": "gutter",
   "centered_layout": {
@@ -78,7 +89,9 @@
     "use_system_clipboard": "never"
   },
   "edit_predictions": {
-    "disabled_globs": [".env"]
+    "disabled_globs": [
+      ".env"
+    ]
   },
   "show_nav_history_buttons": false,
   "outline_panel": {
@@ -96,19 +109,10 @@
   "minimap": {
     "show": "never"
   },
-  "formatters": {
-    "javascript": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       },
-       "typescript": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       },
-       "json": {
-         "command": "npx",
-         "args": ["prettier", "--stdin-filepath", "${FILE_PATH}"]
-       }
-   },
-   "format_on_save": "on"
+  "format_on_save": "on",
+  "theme": {
+    "mode": "dark",
+    "dark": "Ayu Mirage",
+    "light": "Fleet Light"
+  }
 }

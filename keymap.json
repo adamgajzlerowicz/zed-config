@@ -1,15 +1,16 @@
 [
   {
     "bindings": {
+      "cmd-y": ["task::Spawn", { "task_name": "git commit-push" }],
+      "cmd-=": ["task::Spawn", { "task_name": "switch-theme" }],
       "cmd-b": "git::Blame",
       "shift-tab": "workspace::ToggleLeftDock",
+      "cmd-g": "workspace::ToggleRightDock",
       "cmd-shift-c": "workspace::ToggleBottomDock",
       "cmd-r": "project_panel::ToggleFocus",
-      "alt-p": ["task::Spawn", { "task_name": "git commit-push" }],
       "cmd-j cmd-j": "project_panel::ToggleFocus",
       "cmd-t": "terminal_panel::ToggleFocus",
       "cmd-o": "outline::Toggle",
-      "cmd-g": "workspace::ToggleRightDock",
       "cmd-j l": "workspace::ToggleLeftDock",
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
@@ -31,8 +32,7 @@
       "cmd-enter": "editor::ToggleCodeActions",
       "ctrl-s": "workspace::SaveAll",
       "cmd-l": "editor::Format",
-      "alt-enter":"assistant::InlineAssist"
-
+      "alt-enter": "assistant::InlineAssist"
     }
   },
   {
@@ -46,6 +46,7 @@
     "bindings": {
       "g d": "editor::GoToDefinition",
       "g u": "editor::FindAllReferences",
+      "cmd-u": "editor::FindAllReferences",
       "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
       "g r": "workspace::ToggleRightDock"
@@ -54,7 +55,7 @@
   {
     "context": "Terminal",
     "bindings": {
-      "cmd-n": "workspace::NewTerminal",
+      "cmd-t": "workspace::NewTerminal",
       "cmd-l": "terminal::Clear"
     }
   },

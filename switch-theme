@@ -1,0 +1,10 @@
+#!/bin/bash
+
+settings="$HOME/.config/zed/settings.json"
+
+if grep -q '"mode": "dark"' "$settings"; then
+  sed -i '' 's/"mode": "dark"/"mode": "light"/' "$settings"
+else
+  sed -i '' 's/"mode": "light"/"mode": "dark"/' "$settings"
+fi
+
