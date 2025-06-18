@@ -6,10 +6,12 @@
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet"
+      "model": "claude-sonnet-4",
+      "temperature": 0.1
     },
     "version": "2"
   },
+  "show_completions_on_input": false,
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
@@ -24,39 +26,27 @@
   },
   "languages": {
     "JavaScript": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     },
     "TypeScript": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     },
     "TSX": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     },
     "JSX": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     },
     "Astro": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     },
     "JSON": {
-      "formatter": [
-        "prettier"
-      ],
+      "formatter": ["prettier"],
       "format_on_save": "on"
     }
   },
@@ -89,9 +79,7 @@
     "use_system_clipboard": "never"
   },
   "edit_predictions": {
-    "disabled_globs": [
-      ".env"
-    ]
+    "disabled_globs": [".env"]
   },
   "show_nav_history_buttons": false,
   "outline_panel": {
@@ -111,7 +99,7 @@
   },
   "format_on_save": "on",
   "theme": {
-    "mode": "dark",
+    "mode": "light",
     "dark": "Ayu Mirage",
     "light": "Fleet Light"
   }
