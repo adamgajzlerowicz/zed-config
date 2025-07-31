@@ -1,18 +1,23 @@
 {
-  "assistant": {
+  "agent": {
+    "notify_when_agent_waiting": "never",
+    "default_profile": "write",
+    "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-latest"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+      "temperature": 0.1
     },
     "version": "2"
   },
-  "theme": "JetBrains New Dark",
+  "show_completions_on_input": false,
   "ui_font_size": 14,
   "buffer_font_features": {
     "calt": true
   },
-  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "JetBrains Mono",
   "vim_mode": true,
   "autosave": "on_focus_change",
   "features": {
@@ -21,41 +26,28 @@
   },
   "languages": {
     "JavaScript": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
+      "formatter": ["prettier"],
+      "format_on_save": "on"
     },
     "TypeScript": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
+      "formatter": ["prettier"],
+      "format_on_save": "on"
+    },
+    "TSX": {
+      "formatter": ["prettier"],
+      "format_on_save": "on"
+    },
+    "JSX": {
+      "formatter": ["prettier"],
+      "format_on_save": "on"
     },
     "Astro": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
+      "formatter": ["prettier"],
+      "format_on_save": "on"
     },
     "JSON": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
-    }
-  },
-  "formatter": {
-    "code_actions": {
-      "source.fixAll.eslint": true
+      "formatter": ["prettier"],
+      "format_on_save": "on"
     }
   },
   "current_line_highlight": "gutter",
@@ -86,7 +78,7 @@
   "vim": {
     "use_system_clipboard": "never"
   },
-  "inline_completions": {
+  "edit_predictions": {
     "disabled_globs": [".env"]
   },
   "show_nav_history_buttons": false,
@@ -96,14 +88,19 @@
   "indent_guides": {
     "enabled": false
   },
-  // "show_inline_completions": false,
   "terminal": {
     "toolbar": {
       "title": false
     },
-    "dock": "right"
+    "dock": "bottom"
   },
   "minimap": {
-    "show": "always"
+    "show": "never"
+  },
+  "format_on_save": "on",
+  "theme": {
+    "mode": "dark",
+    "dark": "Ayu Mirage",
+    "light": "Fleet Light"
   }
 }

@@ -11,6 +11,7 @@
       "cmd-j cmd-j": "project_panel::ToggleFocus",
       "cmd-t": "terminal_panel::ToggleFocus",
       "cmd-o": "outline::Toggle",
+      "cmd-i": "projects::OpenRecent",
       "cmd-j l": "workspace::ToggleLeftDock",
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
