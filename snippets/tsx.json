@@ -3,5 +3,10 @@
     "prefix": "cl",
     "body": ["console.log($1);", "$0"],
     "description": "Log to the console"
+  },
+  "className": {
+    "prefix": "c",
+    "body": ["className=\"$1\""],
+    "description": "className snippet"
   }
 }

@@ -6,8 +6,7 @@
     "allow_concurrent_runs": false,
     "reveal": "never",
     "hide": "always",
-    "show_summary": false,
-    "show_output": false
+    "show_summary": false
   },
   {
     "label": "switch-theme",
@@ -16,8 +15,6 @@
     "allow_concurrent_runs": false,
     "reveal": "never",
     "hide": "always",
-    "show_summary": false,
-    "show_output": false
+    "show_summary": false
   }
 ]
-

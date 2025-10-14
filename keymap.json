@@ -1,6 +1,7 @@
 [
   {
     "bindings": {
+      "cmd-shift-o": "project_symbols::Toggle",
       "cmd-y": ["task::Spawn", { "task_name": "git commit-push" }],
       "cmd-=": ["task::Spawn", { "task_name": "switch-theme" }],
       "cmd-b": "git::Blame",
