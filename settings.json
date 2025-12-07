@@ -10,12 +10,12 @@
     "**/.classpath",
     "**/.settings",
     "**/*yarn*",
-    "packages/zawody/server.js"
+    "packages/zawody/server.js",
     // "packages/med-pro*",
     // "packages/mobile",
     // "packages/zawody",
     // "packages/store",
-    // "packages/nosework",
+    "packages/nosework"
     // "packages/home",
     // "packages/infra",
     // "packages/agitest",
@@ -26,14 +26,13 @@
 
   "context_servers": {
     "mcp-server-context7": {
-      "source": "extension",
       "enabled": true,
       "settings": {
         "default_minimum_tokens": "10000"
       }
     }
   },
-  "agent_font_size": 13,
+  "agent_ui_font_size": 13,
   "agent": {
     "default_model": {
       "provider": "zed.dev",
@@ -44,43 +43,6 @@
     "default_profile": "write",
     "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true
-  },
-  "language_models": {
-    "ollama": {
-      // "api_url": "http://192.168.0.118:11434",
-      "available_models": [
-        {
-          "name": "devstral-8k",
-          "display_name": "local",
-          "max_tokens": 32768,
-          "supports_tools": true
-        }
-        // {
-        //   "name": "llama3.1:8b",
-        //   "display_name": "Local Llama 3.1 8B",
-        //   "max_tokens": 128000,
-        //   "supports_tools": true
-        // },
-        // {
-        //   "name": "mistral-nemo",
-        //   "display_name": "Local Mistral Nemo 12B",
-        //   "max_tokens": 128000,
-        //   "supports_tools": true
-        // },
-        // {
-        //   "name": "hhao/qwen2.5-coder-tools:3b",
-        //   "display_name": "Local Qwen 2.5 Coder Tools 3B",
-        //   "max_tokens": 32768,
-        //   "supports_tools": true
-        // },
-        // {
-        //   "name": "nchapman/ministral-8b-instruct-2410",
-        //   "display_name": "Local Mistral 8B Instruct 2410",
-        //   "max_tokens": 128000,
-        //   "supports_tools": true
-        // }
-      ]
-    }
   },
   "buffer_font_size": 14,
   "inline_code_actions": false,
@@ -98,28 +60,6 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "languages": {
-    "JavaScript": {
-      "formatter": ["prettier"],
-      "format_on_save": "on"
-    },
-    "TypeScript": {
-      "formatter": ["prettier"],
-      "format_on_save": "on"
-    },
-    "TSX": {
-      "formatter": ["prettier"],
-      "format_on_save": "on"
-    },
-    "Astro": {
-      "formatter": ["prettier"],
-      "format_on_save": "on"
-    },
-    "JSON": {
-      "formatter": ["prettier"],
-      "format_on_save": "on"
-    }
-  },
   "current_line_highlight": "gutter",
   "centered_layout": {
     "left_padding": 0.1,
@@ -135,7 +75,7 @@
     "enabled": false
   },
   "vim": {
-    "use_system_clipboard": "never"
+    // "use_system_clipboard": "never"
   },
   "edit_predictions": {
     "disabled_globs": [".env"]
@@ -159,7 +99,7 @@
   },
   "format_on_save": "on",
   "theme": {
-    "mode": "dark",
+    "mode": "light",
     "dark": "Zen Dark",
     "light": "Fleet Light"
   },

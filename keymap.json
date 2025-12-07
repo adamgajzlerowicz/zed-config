@@ -16,7 +16,8 @@
       "cmd-j l": "workspace::ToggleLeftDock",
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
-      "cmd-k": "git_panel::ToggleFocus"
+      "cmd-k": "git_panel::ToggleFocus",
+      "cmd-,": "zed::OpenSettingsFile"
     }
   },
   {
