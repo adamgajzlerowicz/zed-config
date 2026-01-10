@@ -1,4 +1,5 @@
 {
+  "use_on_type_format": false,
   "icon_theme": "Serendipity Icons",
   "file_scan_exclusions": [
     "**/.git",
@@ -6,43 +7,65 @@
     "**/.hg",
     "**/CVS",
     "**/.DS_Store",
-    "**/Thumbs.db",
-    "**/.classpath",
-    "**/.settings",
-    "**/*yarn*",
-    "packages/zawody/server.js",
-    // "packages/med-pro*",
+    // "**/Thumbs.db",
+    // "**/.classpath",
+    // "**/.settings",
+    // "**/*yarn*",
+    // "packages/zawody/server.js",
+    // "packages/med-pro",
+    // "packages/med-pro-landing",
+    // "packages/med-pro-search",
     // "packages/mobile",
     // "packages/zawody",
     // "packages/store",
-    "packages/nosework"
+    // // "packages/nosework",
     // "packages/home",
     // "packages/infra",
     // "packages/agitest",
     // "packages/hoopers",
     // "packages/fds",
-    // "packages/socket"
+    // "packages/socket",
   ],
-
   "context_servers": {
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--python",
+        "/opt/homebrew/bin/python3.11",
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "claude-code",
+        "--project-from-cwd",
+      ],
+    },
+    // "serena-context-server": {
+    //   "enabled": true,
+    //   "settings": {
+    //     "python_executable": "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+    //   },
+    // },
     "mcp-server-context7": {
       "enabled": true,
       "settings": {
-        "default_minimum_tokens": "10000"
-      }
-    }
+        "default_minimum_tokens": "10000",
+      },
+    },
   },
   "agent_ui_font_size": 13,
   "agent": {
+    "enable_feedback": false,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4",
     },
     "enabled": true,
     "notify_when_agent_waiting": "never",
     "default_profile": "write",
     "play_sound_when_agent_done": true,
-    "always_allow_tool_actions": true
+    "always_allow_tool_actions": true,
   },
   "buffer_font_size": 14,
   "inline_code_actions": false,
@@ -51,57 +74,57 @@
   "fast_scroll_sensitivity": 0,
   "ui_font_size": 12,
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "buffer_font_family": "JetBrains Mono",
   "ui_font_family": "JetBrains Mono",
   "vim_mode": true,
   "autosave": "on_focus_change",
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "current_line_highlight": "gutter",
   "centered_layout": {
     "left_padding": 0.1,
-    "right_padding": 0.1
+    "right_padding": 0.1,
   },
   "tab_bar": {
-    "show": false
+    "show": false,
   },
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "preview_tabs": {
-    "enabled": false
+    "enabled": false,
   },
   "vim": {
-    // "use_system_clipboard": "never"
+    "use_system_clipboard": "never",
   },
   "edit_predictions": {
-    "disabled_globs": [".env"]
+    "disabled_globs": [".env"],
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "indent_guides": {
-    "enabled": false
+    "enabled": false,
   },
   "terminal": {
     "keep_selection_on_copy": false,
     "toolbar": {
-      "breadcrumbs": false
+      "breadcrumbs": false,
     },
     "dock": "bottom",
-    "font_size": 12
+    "font_size": 12,
   },
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
   "format_on_save": "on",
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "dark": "Zen Dark",
-    "light": "Fleet Light"
+    "light": "Fleet Light",
   },
-  "remove_trailing_whitespace_on_save": true
+  "remove_trailing_whitespace_on_save": true,
 }

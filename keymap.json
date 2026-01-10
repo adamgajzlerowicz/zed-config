@@ -17,14 +17,14 @@
       "cmd-j r": "workspace::ToggleRightDock",
       "cmd-j b": "workspace::ToggleBottomDock",
       "cmd-k": "git_panel::ToggleFocus",
-      "cmd-,": "zed::OpenSettingsFile"
-    }
+      "cmd-,": "zed::OpenSettingsFile",
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j j": "vim::NormalBefore"
-    }
+      "j j": "vim::NormalBefore",
+    },
   },
   {
     "context": "Editor",
@@ -35,37 +35,39 @@
       "cmd-enter": "editor::ToggleCodeActions",
       "ctrl-s": "workspace::SaveAll",
       "cmd-l": "editor::Format",
-      "alt-enter": "assistant::InlineAssist"
-    }
+      "alt-enter": "assistant::InlineAssist",
+    },
   },
   {
     "context": "ProjectPanel",
     "bindings": {
-      "g e": "project_panel::Rename"
-    }
+      "g e": "project_panel::Rename",
+    },
   },
   {
     "context": "Editor && vim_mode == normal && (vim_operator == none || vim_operator == n) && !VimWaiting",
     "bindings": {
+      "g p": "editor::GoToDiagnostic",
       "g d": "editor::GoToDefinition",
       "g u": "editor::FindAllReferences",
       "cmd-u": "editor::FindAllReferences",
       "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
-      "g r": "workspace::ToggleRightDock"
-    }
+      "g r": "editor::FindAllReferences",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
       "cmd-t": "workspace::NewTerminal",
-      "cmd-l": "terminal::Clear"
-    }
+      "cmd-l": "terminal::Clear",
+      "cmd-o": null,
+    },
   },
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-w": "pane::CloseActiveItem"
-    }
-  }
+      "ctrl-w": "pane::CloseActiveItem",
+    },
+  },
 ]
